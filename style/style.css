@@ -1,0 +1,41 @@
+/*Shared Styles*/
+.display-flex{
+  display: flex;
+}
+.text-white{
+  color: #FFFFFF;
+}
+.text-green{
+  color: #00FF88;
+}
+.text-dark{
+  color: #1A0B2E;
+}
+.background-color{
+  background-color: #412567;
+}
+
+/*header styles*/
+
+
+/*navbar related styles*/
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-style{
+  font-weight: 600;
+  font-size: 3rem;
+}
+.nav-link{
+  text-decoration: none;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.navbar, .banner{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
