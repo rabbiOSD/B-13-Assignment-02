@@ -1,41 +1,173 @@
 /*Shared Styles*/
-.display-flex{
+.display-flex {
   display: flex;
 }
-.text-white{
+
+.logo-color1 {
   color: #FFFFFF;
 }
-.text-green{
+
+.logo-color2 {
+  background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-green {
   color: #00FF88;
 }
-.text-dark{
+
+.text-dark {
   color: #1A0B2E;
 }
-.background-color{
-  background-color: #412567;
+
+.background-color {
+  background-color: rgba(26, 11, 46, 1);
+  ;
+}
+
+.rating-text {
+  color: #00FF88;
+  font-size: 48px;
+  text-align: center;
+}
+
+.primary-btn {
+  background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+  width: 201px;
+  height: 44px;
+  border-radius: 10000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8;
+  padding: 12px 20px 12px 20px;
+
+}
+
+.secondary-btn {
+  width: 147px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8;
+  padding: 12px 20px 12px 20px;
+  background-color: rgba(26, 11, 46, 1);
+  border: 2px solid #00FF88;
+  border-radius: 10000px;
 }
 
 /*header styles*/
 
 
 /*navbar related styles*/
-.navbar{
+.navbar {
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
-.logo-style{
+
+.logo-style {
   font-weight: 600;
   font-size: 3rem;
 }
-.nav-link{
+
+.nav-link {
   text-decoration: none;
 }
-.nav-item{
+
+.nav-item {
   list-style: none;
   margin-right: 30px;
 }
-.navbar, .banner{
+
+.navbar,
+.banner {
   max-width: 1600px;
   margin: 0 auto;
 }
 
+/* banner Area*/
+.banner {
+  background: url(../assets/hero-bg.png);
+  max-width: 100%;
+  background-position: center;
+}
+
+.hero-circle {
+  position: relative;
+
+}
+
+.microphone {
+  position: absolute;
+  margin-right: 200px;
+}
+
+.banner-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding: 101px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 73px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+}
+
+
+
+
+.btn2 {
+  background-color: non;
+}
+
+
+/* About The Podcast*/
+.about {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 200px 120px 200px;
+}
+
+.about-section {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px;
+}
+
+.about-title {
+  font-weight: 700;
+  line-height: 58px;
+  font-size: 48px;
+}
+
+.success-rating {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
