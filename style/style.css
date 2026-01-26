@@ -147,7 +147,7 @@
 
 /* About The Podcast*/
 .about {
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
   text-align: center;
   padding: 50px 200px 120px 200px;
@@ -170,4 +170,44 @@
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
+}
+
+/* Why Choose me*/
+
+.techwave-header {
+  color: #FFFFFF;
+  font-style: Bold;
+  font-size: 48px;
+}
+
+.techwave-title {
+  background: rgba(35, 14, 61, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40;
+  padding: 120px 200px 120px 200px;
+}
+
+.container {
+  color: #FFFFFF;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+  background-color: rgba(53, 17, 101, 0.4);
+  padding: 40px;
+  border-radius: 40px;
+}
+
+#sidebar {
+  grid-row: span 2;
+}
+
+#side-nav {
+  grid-column: span 2;
 }
