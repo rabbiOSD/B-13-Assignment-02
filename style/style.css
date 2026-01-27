@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*Shared Styles*/
 .display-flex {
   display: flex;
@@ -25,14 +31,6 @@
 
 .background-color {
   background-color: rgba(26, 11, 46, 1);
-  ;
-}
-
-.header-section {
-  color: #FFFFFF;
-  font-style: Bold;
-  font-size: 48px;
-  text-align: center;
 }
 
 .rating-text {
@@ -71,6 +69,13 @@
 
 /*header styles*/
 
+.header-section {
+  color: #FFFFFF;
+  font-style: Bold;
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 40px;
+}
 
 /*navbar related styles*/
 .navbar {
@@ -106,14 +111,27 @@
   background-position: center;
 }
 
-.hero-circle {
+.hero-circle-section {
   position: relative;
-
 }
 
 .microphone {
   position: absolute;
-  margin-right: 200px;
+  margin-left: 60px;
+  top: 50px;
+}
+
+.button {
+  position: absolute;
+  margin-left: 280px;
+  bottom: 300px;
+}
+
+.green-btn {
+  background-color: #00FF88;
+  border-radius: 10px;
+  padding: 8px 16px 8px 16px;
+  border: none;
 }
 
 .banner-area {
@@ -165,6 +183,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 80px;
+  line-height: 24px;
 }
 
 .about-title {
@@ -216,6 +235,7 @@
 
 .featured-section {
   background: rgba(26, 11, 46, 1);
+  padding: 120px;
 }
 
 .featured-container {
@@ -225,7 +245,6 @@
   justify-content: flex-start;
   align-items: center;
   gap: 120;
-  padding: 120px 200px 120px 200px;
 }
 
 .card-container {
@@ -244,16 +263,59 @@
   padding: 24px;
 }
 
-.profile-card {
-  background-color: #1A0B2E;
+#host-info {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.content-item {
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.host-content {
   width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 40px;
+}
+
+.host-title {
+  text-align: start;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+/* Footer section*/
+.footer-section {
+  background: url(../assets/footer-bg.png);
+  max-width: 100%;
+  background-position: center;
+}
+
+.footer-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 120;
-  padding: 120px 200px 120px 200px;
+  padding: 120px;
 }
-.host-box{
+
+.Social-icon {
   display: flex;
+  gap: 32px;
+  line-height: 50px;
+}
+
+.Social-icon h5 {
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
