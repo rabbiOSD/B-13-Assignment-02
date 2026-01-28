@@ -17,6 +17,12 @@
   background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
 }
 
+.logo-color3 {
+  background-image: linear-gradient(red, blue);
+  color: transparent;
+  background-clip: text;
+}
+
 .text-white {
   color: #FFFFFF;
 }
@@ -41,8 +47,6 @@
 
 .primary-btn {
   background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
-  width: 201px;
-  height: 44px;
   border-radius: 10000px;
   display: flex;
   flex-direction: row;
@@ -250,16 +254,19 @@
 .card-container {
   display: flex;
   justify-content: space-between;
-  gap: 54px;
+  gap: 24px;
 }
 
 .card {
-  width: 380px;
-  height: 226px;
+  width: 100%;
   color: #FFFFFF;
   border-radius: 24px;
   background: rgba(37, 13, 68, 1);
-  gap: 12;
+  gap: 12px;
+  padding: 24px;
+}
+
+.card-content {
   padding: 24px;
 }
 
@@ -318,4 +325,140 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+/*Mobile Device*/
+@media screen and (max-width:576px) {
+  .header-section {
+    font-size: 40px;
+  }
+
+  .navbar,
+  .banner {
+    width: 100%;
+    width: 440px;
+  }
+
+  .primary-btn {}
+
+  .banner {
+    max-width: 100%;
+  }
+
+  .banner-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .banner-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .about {
+    width: 100%;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .about-section {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .success-rating {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* Why Choose TechWave*/
+  .techwave-title {
+    padding: 24px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16;
+    padding: 24px;
+  }
+
+
+
+  /* Features Episode */
+  .featured-section {
+    padding: 24px;
+  }
+
+  .featured-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16;
+    padding: 24px;
+  }
+
+  /* Meet The Host */
+  #host-info {
+    padding: 24px;
+  }
+
+  .host-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 5px;
+  }
+
+  .content-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .host-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  /*footer Section*/
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    padding: 12px;
+  }
 }
